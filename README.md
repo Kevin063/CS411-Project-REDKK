@@ -16,7 +16,7 @@ Here is a full list of our diligent contributors to the team. We put their role 
 
 TBD
 
-# What Techical Designs are made in our project?
+# What techical designs are made in our project?
 
 TBD
 
