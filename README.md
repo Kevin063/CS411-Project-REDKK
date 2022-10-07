@@ -8,7 +8,10 @@ Hi! Welcome! This is the repository for Boston University CS411 Group 5. And our
 Here is a full list of our diligent contributors to the team. We put their role names here, but surely they're always rolling up and exploring opportunity areas in our project to make cross-functional improvements.
 
  - **Hengyuan Liu**
-
+ - **Chave,Reid,B**
+ - **He,Jianchao**
+ - **Jin,Zhiyuan**
+ - **Chen,Kyran**
 # What is our project doing?
 
 TBD
