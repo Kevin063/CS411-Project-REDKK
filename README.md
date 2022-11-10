@@ -15,6 +15,7 @@ Here is a full list of our diligent contributors to the team. We put their role 
 # What is our project doing?
 
 **Please feel free to check our Design Doc at:**
+
 **https://docs.google.com/document/d/1wV5cpIync11EBAAc_nJn-z1qlZtf8XAQyu0-VghD9oY/edit?usp=sharing**
 
 # What techical designs are made in our project?
