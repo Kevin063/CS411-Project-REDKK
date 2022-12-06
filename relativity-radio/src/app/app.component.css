@@ -1,3 +1,7 @@
+
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +10,7 @@
     height: 70px;
     width: 800px;
 
-    margin: 100px auto 0 auto;
+    margin: 20px auto 0 auto;
     }
     .parent {
     position: relative;
@@ -31,3 +35,5 @@
     outline: none;
     cursor: pointer;
     }
+
+    
