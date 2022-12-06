@@ -1,6 +1,9 @@
+// Commented out GoogleMapsModule so the site would actually compile. -Reid
+
 import { NgModule,Component } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { GoogleMapsModule } from '@angular/google-maps'
+
+// import { GoogleMapsModule } from '@angular/google-maps'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -15,7 +18,7 @@ import { PipesPipe } from './pipes.pipe';
   ],
   imports: [
     BrowserModule,
-    GoogleMapsModule,
+   // GoogleMapsModule,
     AppRoutingModule
   ],
   providers: [],
