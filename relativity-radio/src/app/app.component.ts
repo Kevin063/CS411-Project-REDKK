@@ -11,7 +11,6 @@ export class AppComponent implements OnInit {
   constructor(private http: HttpClient) {} // also for API
 
   title = 'relativity-radio';
-=======
 
   ngOnInit() {
     // API Call!   TODO: make it actually work!
@@ -27,6 +26,5 @@ export class AppComponent implements OnInit {
     }).subscribe(data => {
       console.log(data);
     })
-
 
   }
