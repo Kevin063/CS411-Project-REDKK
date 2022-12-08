@@ -1,8 +1,9 @@
 // There was no package GoogleMapsModule in google-maps. -Reid
 
-import { NgModule,Component } from '@angular/core';
+import { NgModule, Component } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpClientModule} from '@angular/common/http'; // importing the http module (for API requests)
+import { RouterModule } from '@angular/router'; // navigation
+import { HttpClientModule } from '@angular/common/http'; // importing the http module (for API requests)
 
 
 // see google-maps README; can also use LoaderOptions
@@ -11,16 +12,24 @@ import { HttpClientModule} from '@angular/common/http'; // importing the http mo
 // this is in beta and doesn't seem to work.
 // import { AgmCoreModule } from '@agm/core';
 
-import { AppRoutingModule } from './app-routing.module';
+// root component
 import { AppComponent } from './app.component';
-import { GeoRelativityComponent } from './geo-relativity/geo-relativity.component';
+
+// pipes
 import { PipesPipe } from './pipes.pipe';
+
+// components
+import { ControlPanelComponent } from './control-panel/control-panel.component';
+import { GeoRelativityComponent } from './geo-relativity/geo-relativity.component';
+import { TitleBarComponent } from './title-bar/title-bar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     GeoRelativityComponent,
+    ControlPanelComponent,
     PipesPipe,
+    TitleBarComponent,
   ],
   imports: [
     BrowserModule,
@@ -29,10 +38,13 @@ import { PipesPipe } from './pipes.pipe';
     // }),
     // Loader,
     // LoaderOptions,
-    AppRoutingModule,
+    RouterModule.forRoot([
+        { path: '', component: ControlPanelComponent },
+        // { path: 'products/:productId', component: ProductDetailsComponent },
+      ]),
     HttpClientModule,
   ],
-  providers: [],
+  providers: [], // used for services!
   bootstrap: [AppComponent]
 })
 export class AppModule { }
