@@ -18,18 +18,16 @@ import { AppComponent } from './app.component';
 // pipes
 import { PipesPipe } from './pipes.pipe';
 
-// components
+// sub-components
 import { ControlPanelComponent } from './control-panel/control-panel.component';
-import { GeoRelativityComponent } from './geo-relativity/geo-relativity.component';
-import { TitleBarComponent } from './title-bar/title-bar.component';
+import { GeoRelativityComponent } from './geo-relativity/geo-relativity.component'; // probably gonna make this one a service
 
 @NgModule({
   declarations: [
     AppComponent,
+    PipesPipe,
     GeoRelativityComponent,
     ControlPanelComponent,
-    PipesPipe,
-    TitleBarComponent,
   ],
   imports: [
     BrowserModule,
