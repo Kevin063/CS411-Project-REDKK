@@ -1,10 +1,7 @@
-// There was no package GoogleMapsModule in google-maps. -Reid
-
 import { NgModule, Component } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router'; // navigation
-import { HttpClientModule } from '@angular/common/http'; // importing the http module (for API requests)
-
+import { HttpClientModule } from '@angular/common/http';
 
 // see google-maps README; can also use LoaderOptions
 // import { Loader, LoaderOptions } from 'google-maps'
@@ -42,7 +39,7 @@ import { GeoRelativityComponent } from './geo-relativity/geo-relativity.componen
       ]),
     HttpClientModule,
   ],
-  providers: [], // used for services!
+  providers: [], // used for services! todo: add locator and spot-listen
   bootstrap: [AppComponent]
 })
 export class AppModule { }

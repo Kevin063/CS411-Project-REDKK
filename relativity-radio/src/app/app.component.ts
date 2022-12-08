@@ -1,11 +1,12 @@
-import { Component, OnInit } from '@angular/core'; // OnInit lifecycle hook
-import { HttpClient, HttpHeaders } from '@angular/common/http'; //API
+import { Component, OnInit } from '@angular/core'; // "lifecycle hook"
+import { HttpClient, HttpHeaders } from '@angular/common/http'; // for API
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent implements OnInit {
 
   constructor(private http: HttpClient) {} // also for API
