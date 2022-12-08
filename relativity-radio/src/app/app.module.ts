@@ -9,7 +9,7 @@ import { HttpClientModule} from '@angular/common/http'; // importing the http mo
 // import { Loader, LoaderOptions } from 'google-maps'
 
 // this is in beta and doesn't seem to work.
-//import { AgmCoreModule } from '@agm/core';
+// import { AgmCoreModule } from '@agm/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
