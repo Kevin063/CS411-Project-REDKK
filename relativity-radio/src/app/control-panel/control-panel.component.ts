@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { LocatorService } from '../locator.service';
+
 @Component({
   selector: 'app-control-panel',
   templateUrl: './control-panel.component.html',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ControlPanelComponent implements OnInit {
 
-  constructor() { }
+  zip = this.locatorService.getZipCode();
+
+  constructor(
+    // injection of services
+    private locatorService: LocatorService,
+  ) { }
 
   ngOnInit(): void {
+
   }
 
 }

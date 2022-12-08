@@ -2,7 +2,7 @@
 
 // make required import statements for Settings and Pin interfaces here.
 
-import Pin from './pin.ts';
+import { Pin } from './pin';
 
 export interface User {
   id: number;
@@ -13,7 +13,7 @@ export interface User {
 
 // test "people":
 export var testyMcTestFace = {
-  id: 69;
-  settings: "";
-  pins: [];
+  id: 69,
+  settings: "",
+  pins: [],
 }
