@@ -10,17 +10,32 @@
                 alert(get_from_http.response);
             }
         }
-        get_from_http.open('GET', 'https://1w6pxgofqa.execute-api.us-east-1.amazonaws.com/REDKKPrototype/rapid-spotify?TrackId=4sFGNz4MYpGoz53ZGCwsiE', false);
+        get_from_http.open('GET', 'https://1w6pxgofqa.execute-api.us-east-1.amazonaws.com/REDKKPrototype/rapid-spotify?TrackId=4sFGNz4MYpGoz53ZGCwsiE', true);
         get_from_http.setRequestHeader('TrackId=4sFGNz4MYpGoz53ZGCwsiE');
         get_from_http.send();
         search_result = get_from_http.response;
     }       
 
     //Login/Register
-
+    $(search-bar).ready(function(){
+        $('.brand .search bar button').click(function(){
+            ("#search_result").load('https://1w6pxgofqa.execute-api.us-east-1.amazonaws.com/REDKKPrototype/rapid-spotify?TrackId=4sFGNz4MYpGoz53ZGCwsiE', '.brand .search-bar .parent');
+        });
+    });
 
     //Create List
-    
+    var x = document.getElementById("loca")
+    function getLocation(){
+        if (navigator.geolocation){
+            navigator.geolocation.getCurrentPosition(showPosition);
+        }else {
+            x.innerHTML = "Geolocation is not supported by this browser."
+        }
+    }
+
+    function showPosition(position) {
+        x.innerHTML = "Latitude: " + position.coords.longitude;
+    }
     
     // Sticky Navbar
     $(window).scroll(function () {

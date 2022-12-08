@@ -63,7 +63,7 @@
                         <div class="search-bar">
                             <form  class="parent">
                                 <input type="text" placeholder="Search Music" class="search-content" name="TrackId">
-                                <button value="TrackId" onclick="submit()" ><i class="fa fa-search"></i></button>
+                                <button value="TrackId" onclick="submit()" name><i class="fa fa-search"></i></button>
                                 <var search_result="submit()">
                             </form>
                         </div>
@@ -113,44 +113,17 @@
         <div class="top-news">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 tn-left">
-                        <h2> Today's Top Hits </h2> 
-                        <!--the music play list-->
-        
-                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DWVmX5LMTOKPw?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    <div class="col-md-6 tn-left"> <!--the music play list-->
+                        <div id="search_result"><iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZEVXbMDoHDwVN2tF?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div>
                     </div>
                     <div class="col-md-6 tn-right">
                         <div class="row">
                             <div class="col-md-6">
-                                <div class="tn-img">
-                                    <img src="img/news-350x223-1.jpg" />
-                                    <div class="tn-title">
-                                        <a href="">Lorem ipsum dolor sit</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="tn-img">
-                                    <img src="img/news-350x223-2.jpg" />
-                                    <div class="tn-title">
-                                        <a href="">Lorem ipsum dolor sit</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="tn-img">
-                                    <img src="img/news-350x223-3.jpg" />
-                                    <div class="tn-title">
-                                        <a href="">Lorem ipsum dolor sit</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="tn-img">
-                                    <img src="img/news-350x223-4.jpg" />
-                                    <div class="tn-title">
-                                        <a href="">Lorem ipsum dolor sit</a>
-                                    </div>
+                                <div class="main button">
+                                    <button class="btn" onclick="getLocation()">
+                                        <i>Create your music List</i>
+                                    </button>
+                                    <p id="loca"></p>
                                 </div>
                             </div>
                         </div>
@@ -235,46 +208,41 @@
                         <h2>Popular Hits</h2>
                         <div class="row cn-slider">
                             <div class="col-md-6">
-                                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0O6u0VJ46W86TxN9wgyqDj?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                                <!-- Post Malone, I like you-->
+                                <iframe style="border-radius:10px" src="https://open.spotify.com/embed/track/0O6u0VJ46W86TxN9wgyqDj?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                             </div>
                             <div class="col-md-6">
-                                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0wHFktze2PHC5jDt3B17DC?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                                <!-- Jack Harlow, First Class-->
+                                <iframe style="border-radius:10px" src="https://open.spotify.com/embed/track/0wHFktze2PHC5jDt3B17DC?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                             </div>
                             <div class="col-md-6">
-                                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0V3wPSX9ygBnCm8psDIegu?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                                <!-- Taylor Swift, Anti-Hero-->
+                                <iframe style="border-radius:10px" src="https://open.spotify.com/embed/track/0V3wPSX9ygBnCm8psDIegu?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                             </div>
                             <div class="col-md-6">
-                                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/50kpGaPAhYJ3sGmk6vplg0?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                                <!-- Justin Bieber, Love yourself-->
+                                <iframe style="border-radius:10px" src="https://open.spotify.com/embed/track/50kpGaPAhYJ3sGmk6vplg0?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <h2>Entertainment</h2>
+                        <h2>Top Playlists</h2>
                         <div class="row cn-slider">
                             <div class="col-md-6">
-                                <div class="cn-img">
-                                    <img src="img/news-350x223-2.jpg" />
-                                    <div class="cn-title">
-                                        <a href="">Lorem ipsum dolor sit</a>
-                                    </div>
-                                </div>
+                                <!-- Chill playlist-->
+                                <iframe style="border-radius:14px" src="https://open.spotify.com/embed/playlist/42eLtt8RUBboyXLmNQWU5a?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                             </div>
                             <div class="col-md-6">
-                                <div class="cn-img">
-                                    <img src="img/news-350x223-1.jpg" />
-                                    <div class="cn-title">
-                                        <a href="">Lorem ipsum dolor sit</a>
-                                    </div>
-                                </div>
+                                <!-- Jazz for study-->
+                                <iframe style="border-radius:14px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DX3SiCzCxMDOH?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                             </div>
                             <div class="col-md-6">
-                                <div class="cn-img">
-                                    <img src="img/news-350x223-3.jpg" />
-                                    <div class="cn-title">
-                                        <a href="">Lorem ipsum dolor sit</a>
-                                    </div>
-                                </div>
+                                <!-- Acoustics pilates-->
+                                <iframe style="border-radius:14px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DXcTpoGQmyr2B?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                             </div>
+                            <div class="col-md-6">
+                                <!-- Christmas classics-->
+                                <iframe style="border-radius:14px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DX6R7QUWePReA?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                         </div>
                     </div>
                 </div>
@@ -687,7 +655,7 @@
         <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
         <!-- JavaScript Libraries -->
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
         <script src="lib/easing/easing.min.js"></script>
         <script src="lib/slick/slick.min.js"></script>

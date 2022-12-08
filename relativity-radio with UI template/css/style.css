@@ -9,7 +9,7 @@ body {
 }
 
 a {
-    color: #FF6F61;
+    color: #56c2bd;
     transition: 0.5s;
 }
 
@@ -48,7 +48,7 @@ h6 {
 .back-to-top {
     position: fixed;
     display: none;
-    background: #FF6F61;
+    background: #48cfcd;
     color: #ffffff;
     width: 35px;
     height: 35px;
@@ -88,7 +88,7 @@ h6 {
 .form-control:focus,
 .custom-select:focus {
     box-shadow: none;
-    border-color: #FF6F61;
+    border-color: #5ad4e4;
 }
 
 .custom-radio,
@@ -104,7 +104,7 @@ h6 {
 .custom-radio .custom-control-input:checked~.custom-control-label::before,
 .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
     color: #ffffff;
-    background: #FF6F61;
+    background: #45dfda;
 }
 
 button.btn {
@@ -115,8 +115,8 @@ button.btn {
 
 button.btn:hover {
     color: #ffffff;
-    background: #FF6F61;
-    border-color: #FF6F61;
+    background: #33bab5;
+    border-color: #33bab5;
 }
 
 
@@ -644,7 +644,7 @@ button.btn:hover {
 }
 
 .tab-news .tn-title a:hover {
-    color: #FF6F61;
+    color: #4ed2e6;
 }
 
 
@@ -742,7 +742,7 @@ button.btn:hover {
 }
 
 .main-news .mn-list ul li a:hover {
-    color: #FF6F61;
+    color: #3da6bb;
 }
 
 
@@ -848,7 +848,7 @@ button.btn:hover {
 }
 
 .single-news .sn-slider .sn-title a:hover {
-    color: #FF6F61;
+    color: #45dcde;
 }
 
 .single-news .sn-slider .slick-prev,
@@ -965,7 +965,7 @@ button.btn:hover {
 .sidebar .tab-news .nav.nav-pills .nav-link:hover,
 .sidebar .tab-news .nav.nav-pills .nav-link.active {
     color: #ffffff;
-    background: #FF6F61;
+    background: #33d7d2;
 }
 
 .sidebar .tab-news .tab-content {
@@ -1132,8 +1132,8 @@ button.btn:hover {
 }
 
 .contact .social a:hover {
-    background: #FF6F61;
-    border-color: #FF6F61;
+    background: #45dfda;
+    border-color: #45dfda;
 }
 
 .contact .social a:hover i {
@@ -1235,7 +1235,7 @@ button.btn:hover {
 }
 
 .footer .social a:hover {
-    background: #FF6F61;
+    background: #4aede8;
 }
 
 .footer .social a:hover i {
@@ -1276,7 +1276,7 @@ button.btn:hover {
 }
 
 .footer .newsletter .btn:hover {
-    background: #FF6F61;
+    background: #43dfe4;
 }
 
 .footer .newsletter input:focus,
@@ -1312,7 +1312,7 @@ button.btn:hover {
 }
 
 .footer-menu .f-menu a:hover {
-    color: #FF6F61;
+    color: #3bd0d0;
 }
 
 .footer-menu .f-menu a:last-child {
