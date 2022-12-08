@@ -2,8 +2,10 @@
 
 import { NgModule,Component } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpClientModule} from '@angular/common/http'; // importing the http module (for API requests)
-
+<<<<<<< HEAD
+import { GoogleMapsModule } from '@angular/google-maps'
+import {HttpClientModule} from '@angular/common/http'; // importing the http module (for API requests)
+=======
 
 // see google-maps README; can also use LoaderOptions
 // import { Loader, LoaderOptions } from 'google-maps'
@@ -11,6 +13,7 @@ import { HttpClientModule} from '@angular/common/http'; // importing the http mo
 // this is in beta and doesn't seem to work.
 //import { AgmCoreModule } from '@agm/core';
 
+>>>>>>> Reid
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { GeoRelativityComponent } from './geo-relativity/geo-relativity.component';
@@ -20,7 +23,7 @@ import { PipesPipe } from './pipes.pipe';
   declarations: [
     AppComponent,
     GeoRelativityComponent,
-    PipesPipe,
+    PipesPipe
   ],
   imports: [
     BrowserModule,
@@ -29,8 +32,12 @@ import { PipesPipe } from './pipes.pipe';
     // }),
     // Loader,
     // LoaderOptions,
+    AppRoutingModule
+  declarations: [AppComponent],
+  imports: [
+    BrowserModule,
     AppRoutingModule,
-    HttpClientModule,
+    HttpClientModule // adding the thing in imports too!
   ],
   providers: [],
   bootstrap: [AppComponent]

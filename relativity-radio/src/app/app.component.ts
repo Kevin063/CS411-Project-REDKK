@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core'; // OnInit lifecycle hook
-import {HttpClient, HttpHeaders} from '@angular/common/http'; //API
+import { HttpClient, HttpHeaders } from '@angular/common/http'; //API
 
 @Component({
   selector: 'app-root',
@@ -13,18 +13,19 @@ export class AppComponent implements OnInit {
   title = 'relativity-radio';
 
   ngOnInit() {
-    // API Call!   TODO: make it actually work!
 
-
+  /*
+   * this is SUPPOSED to be an API call. idk what it actually is.
+   *
     let headers = new HttpHeaders('', {
       'x-rapidapi-host': '',
       'x-rapidapi-key': '',
     });
 
-    this.http.get<any>({
-
-    }).subscribe(data => {
+    this.http.get<any>({}).subscribe(data => {
       console.log(data);
     })
+  */
 
   }
+}
