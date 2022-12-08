@@ -1,4 +1,4 @@
-// main service interacting with Spotify listening activity and API
+// main service interacting with backend ("pushing Pins")
 
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
@@ -10,7 +10,7 @@ import Pin from './pin.ts';
 @Injectable({
   providedIn: 'root'
 })
-export class SpotListenService {
+export class PinPusherService {
 
   constructor() { }
 }

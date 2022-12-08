@@ -2,10 +2,12 @@
 
 // make required import statements for Settings and Pin interfaces here.
 
+import Pin from './pin.ts';
+
 export interface User {
   id: number;
   settings: string; // todo: replace with Settings interface
-  pins: string // todo: replace with list of Pin interface
+  pins: Pin[] // todo: troubleshoot
 }
 
 
@@ -13,5 +15,5 @@ export interface User {
 export var testyMcTestFace = {
   id: 69;
   settings: "";
-  pins: "";
+  pins: [];
 }

@@ -18,6 +18,8 @@ import { PipesPipe } from './pipes.pipe';
 // sub-components
 import { ControlPanelComponent } from './control-panel/control-panel.component';
 import { GeoRelativityComponent } from './geo-relativity/geo-relativity.component'; // probably gonna make this one a service
+import { SettingsComponent } from './settings/settings.component';
+import { HistoryComponent } from './history/history.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,8 @@ import { GeoRelativityComponent } from './geo-relativity/geo-relativity.componen
     PipesPipe,
     GeoRelativityComponent,
     ControlPanelComponent,
+    SettingsComponent,
+    HistoryComponent,
   ],
   imports: [
     BrowserModule,
@@ -35,7 +39,8 @@ import { GeoRelativityComponent } from './geo-relativity/geo-relativity.componen
     // LoaderOptions,
     RouterModule.forRoot([
         { path: '', component: ControlPanelComponent },
-        // { path: 'products/:productId', component: ProductDetailsComponent },
+        { path: 'settings', component: SettingsComponent },
+        { path: 'history', component: HistoryComponent },
       ]),
     HttpClientModule,
   ],
