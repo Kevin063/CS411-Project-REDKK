@@ -1,6 +1,11 @@
 /**********************************/
 /********** General CSS ***********/
 /**********************************/
+
+#title-rel {
+    color: #ffffff;
+}
+
 body {
     color: #000000;
     font-family: 'Montserrat', sans-serif;
