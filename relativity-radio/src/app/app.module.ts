@@ -1,9 +1,7 @@
-// There was no package GoogleMapsModule in google-maps. -Reid
-
-import { NgModule,Component } from '@angular/core';
+import { NgModule, Component } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpClientModule} from '@angular/common/http'; // importing the http module (for API requests)
-
+import { RouterModule } from '@angular/router'; // navigation
+import { HttpClientModule } from '@angular/common/http';
 
 // see google-maps README; can also use LoaderOptions
 // import { Loader, LoaderOptions } from 'google-maps'
@@ -11,16 +9,26 @@ import { HttpClientModule} from '@angular/common/http'; // importing the http mo
 // this is in beta and doesn't seem to work.
 // import { AgmCoreModule } from '@agm/core';
 
-import { AppRoutingModule } from './app-routing.module';
+// root component
 import { AppComponent } from './app.component';
-import { GeoRelativityComponent } from './geo-relativity/geo-relativity.component';
+
+// pipes
 import { PipesPipe } from './pipes.pipe';
+
+// sub-components
+import { ControlPanelComponent } from './control-panel/control-panel.component';
+import { GeoRelativityComponent } from './geo-relativity/geo-relativity.component'; // probably gonna make this one a service
+import { SettingsComponent } from './settings/settings.component';
+import { HistoryComponent } from './history/history.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    GeoRelativityComponent,
     PipesPipe,
+    GeoRelativityComponent,
+    ControlPanelComponent,
+    SettingsComponent,
+    HistoryComponent,
   ],
   imports: [
     BrowserModule,
@@ -29,10 +37,14 @@ import { PipesPipe } from './pipes.pipe';
     // }),
     // Loader,
     // LoaderOptions,
-    AppRoutingModule,
+    RouterModule.forRoot([
+        { path: '', component: ControlPanelComponent },
+        { path: 'settings', component: SettingsComponent },
+        { path: 'history', component: HistoryComponent },
+      ]),
     HttpClientModule,
   ],
-  providers: [],
+  providers: [], // used for services! todo: add locator and spot-listen
   bootstrap: [AppComponent]
 })
 export class AppModule { }

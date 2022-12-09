@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 /* Application-wide Styles */
 
-  img{
+  #logo {
     padding: 4px;
     float: left; }
 
@@ -11,16 +11,13 @@
   form{
     margin: 0 auto; }
 
-
   .container {
     padding: 10px
   }
 
   #i1, #i2 {
-
     width: 80%;
     background: skyblue;
-
   }
 
   #footer {
@@ -31,7 +28,6 @@
     height: 30px;
     background: teal;
     margin: 0em;
-
   }
 
   #innerfooter {
@@ -66,17 +62,21 @@
     color: #333;
     font-family: Cambria, Georgia, serif;
   }
+
   button {
-    background-color: #eee;
+    height: 45px;
+    width: 100px;
+    display: inline-flex;
+    align-items: center;
+    background-color: #ccc;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    color: black;
-    font-size: 1.2rem;
-    padding: 1rem;
-    margin-right: 1rem;
-    margin-bottom: 1rem;
-    margin-top: 1rem;
+    color: cornflowerblue;
+    font-size: 14px;
+    padding: 8px 16px;
+    margin-right: 15px;
+    float: right;
   }
   button:hover {
     background-color: black;
