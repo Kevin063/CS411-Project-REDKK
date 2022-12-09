@@ -1,6 +1,15 @@
 (function ($) {
   "use strict";
-
+  //MainPage Username Display
+  var welcome_text
+  if (localStorage.getItem('user')==null){
+    welcome_text='Create your music List'
+  }
+  else{
+    welcome_text='Create '+localStorage.getItem('user')+'\'s music List'
+  }
+  $('.local-btn').text(welcome_text)
+  
   //Search bar
   $("#searchBtn").click(function () {
     var search_content = $(".search-content").val();
