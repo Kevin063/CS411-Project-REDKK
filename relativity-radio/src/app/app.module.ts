@@ -20,6 +20,7 @@ import { ControlPanelComponent } from './control-panel/control-panel.component';
 import { GeoRelativityComponent } from './geo-relativity/geo-relativity.component'; // probably gonna make this one a service
 import { SettingsComponent } from './settings/settings.component';
 import { HistoryComponent } from './history/history.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { HistoryComponent } from './history/history.component';
     ControlPanelComponent,
     SettingsComponent,
     HistoryComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
