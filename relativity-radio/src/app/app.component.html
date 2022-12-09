@@ -1,29 +1,6 @@
 <!-- Main HTML Page -->
 
 <!-- Title Bar -->
-<div class="title" id="title">
-  <h1>
-    <a href="https://github.com/Kevin063/CS411-Project-REDKK" target="_blank">
-      <img
-        id="logo"
-        width="40"
-        alt="RR Logo"
-        src="/assets/favicon.ico">
-    </a>
-
-    Relativity Radio
-
-    <button id="settings-button" routerLink="/settings">SETTINGS</button>
-    <button id="pins-button" routerLink="/history">HISTORY</button>
-    <button id="home-button" routerLink="/">CONTROL PANEL</button>
-
-  </h1>
-
-</div>
-
-<hr>
-
-<!-- Top Bar Start -->
 <div class="top-bar">
     <div class="container">
         <div class="row">
@@ -42,7 +19,7 @@
         </div>
     </div>
 </div>
-<!-- Top Bar Start -->
+<!-- Title Bar End -->
 
 <!-- Brand Start -->
 <div class="brand">
@@ -50,7 +27,18 @@
         <div class="row align-items-center">
             <div class="col-lg-3 col-md-4">
                 <div class="b-logo">
-                    <h1>Relativity Radio</h1>
+                    <h1>
+                      <img id="logo" width="40" alt="RR Logo" src="/assets/favicon.ico">
+
+                      Relativity Radio
+
+                      <button id="settings-button" routerLink="/settings">SETTINGS</button>
+                      <button id="pins-button" routerLink="/history">HISTORY</button>
+                      <button id="home-button" routerLink="/">CONTROL PANEL</button>
+
+                      <a href="https://github.com/Kevin063/CS411-Project-REDKK" target="_blank"><button>GitHub</button></a>
+
+                    </h1>
                 </div>
             </div>
             <div class="col-lg-6 col-md-4">
@@ -109,8 +97,14 @@
 <!-- Nav Bar End -->
 
 
+
 <!-- Page Navigation (via Angular Router) -->
 <router-outlet></router-outlet>
+
+
+
+
+
 
 <!-- Footer Start -->
 <div class="footer">
