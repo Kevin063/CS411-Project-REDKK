@@ -46,7 +46,6 @@ import { LoginComponent } from './login/login.component';
         { path: 'panel', component: ControlPanelComponent },
         { path: 'login', component: LoginComponent },
       ]),
-      ]),
     HttpClientModule,
   ],
   providers: [], // used for services! todo: add locator and spot-listen
