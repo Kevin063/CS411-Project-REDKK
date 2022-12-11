@@ -15,7 +15,7 @@ Here is a full list of our diligent contributors to the team. We put their role 
 
 # What is our project doing?
 
-**We have deployed our final project deliverable on the AWS!:**
+**We have deployed our final project deliverable on the AWS:**
 
 **http://redkk.s3-website-us-east-1.amazonaws.com/**
 
